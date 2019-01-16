@@ -1,0 +1,6 @@
+<launch>
+  <node name="ekf" pkg="ekftopics_template" type="ekf1.py"  clear_params="true" />
+  <arg name="model" />
+  <param name="model_name" type="str" value="$(arg model)" />
+
+</launch>
